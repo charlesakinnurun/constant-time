@@ -1,3 +1,5 @@
+<!--
+
 # Constant-Time
 
 **Algorithmic Explanation of Constant Time Complexity (O(1))**
@@ -258,4 +260,140 @@ if __name__ == "__main__":
 Understanding constant-time behavior is crucial for designing **efficient algorithms**, especially in performance-sensitive areas like systems programming, cryptography, and real-time computing.
 
 
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # 📘 Constant Time – README -->
+<h1 align="center" >Constant Time</h1>
+
+
+## Overview
+
+**Constant Time** refers to an algorithm whose execution time does not depend on the size of the input.
+No matter how large the dataset grows, the operation always takes the same amount of time.
+
+In algorithm analysis, this is represented as:
+
+```
+O(1)
+```
+
+This is the most efficient time complexity possible.
+
+
+<a href="/src/main.py">Check out for source code</a>
+
+---
+
+## ⚙️ What Constant Time Means
+
+An operation is constant time if it performs the same number of steps regardless of input size.
+
+For example:
+
+* Accessing an element by index in an array
+* Returning the first element of a list
+* Checking if a number is even
+
+Even if the array has 10 elements or 10 million, the time taken is the same.
+
+---
+
+
+<!-- ## 📁 Source Code -->
+
+
+
+## 🧠 Python Examples
+
+### Example 1 — Accessing an Element by Index
+
+```python
+def get_first_element(arr):
+    return arr[0]
+```
+
+This always takes one step, so it runs in **O(1)** time.
+
+---
+
+### Example 2 — Checking if a Number is Even
+
+```python
+def is_even(n):
+    return n % 2 == 0
+```
+
+Only one calculation is performed, so the runtime is constant.
+
+---
+
+### Example 3 — Hash Table Lookup (Average Case)
+
+```python
+my_dict = {"a": 1, "b": 2, "c": 3}
+value = my_dict["b"]
+```
+
+Dictionary lookup typically runs in constant time.
+
+---
+
+## ⏱️ Time Complexity Comparison
+
+| Operation Type | Complexity |
+| -------------- | ---------- |
+| Constant Time  | O(1)       |
+| Linear Time    | O(n)       |
+| Logarithmic    | O(log n)   |
+| Quadratic      | O(n²)      |
+
+Constant time algorithms are always faster than those whose runtime grows with input size.
+
+---
+
+## 👍 Advantages
+
+* Extremely fast and efficient
+* Performance unaffected by input size
+* Ideal for critical system operations
+* Useful in real-time applications
+
+## 👎 Disadvantages
+
+* Rare for full algorithms (usually only small operations)
+* Often relies on extra memory (e.g., hash tables)
+* Not all problems can be solved in constant time
+
+---
+
+## 📌 When Constant Time Occurs
+
+Constant time operations appear in:
+
+* Array indexing
+* Stack push/pop
+* Queue enqueue/dequeue
+* Hash map lookup (average case)
+* Returning a stored value
+
+They are building blocks for efficient algorithms.
+
+---
+
+## 🏁 Summary
+
+Constant time complexity **O(1)** means the runtime never changes as input grows.
+It represents the fastest and most scalable type of algorithmic operation and is fundamental to efficient program design.
 
